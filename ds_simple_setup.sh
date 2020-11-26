@@ -1,3 +1,11 @@
+#!/bin/bash
+
+
+echo "Data Science setup. The following tools will be installed:"
+echo -e "\n1. Python V. 3.8.5 "
+echo -e "\n2. Git Latest version"
+echo -e "\n3. Docker Latest version"
+
 
 # This bash script install python 3.7, jupyter notebook, airflow, docker and git 
 # Python - jupyter - standard modules
