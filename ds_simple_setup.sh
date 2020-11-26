@@ -41,7 +41,7 @@ if [ $DISTRIBUTION = "ubuntu" ]; then
     install_python_libraries
 
 
-    if [ SPARK_CONFIG ]; then
+    if [ $SPARK_CONFIG ]; then
         echo "Spark installation...."
         
         sudo add-apt-repository ppa:openjdk-r/ppa
