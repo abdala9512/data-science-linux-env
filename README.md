@@ -18,13 +18,12 @@ wget https://github.com/abdala9512/data-science-linux-env/blob/main/<selected-co
 
 # Permissions
 ```
-chmod +x <selected-configuration>.sh
+chmod +x <selected-setup>.sh
 ```
 
 # Run
-Try to run the bash script in /home to avoid possible issues
+All configurations will be done at the home directory
 ```
-cd
 ./ds_simple_setup.sh
 ```
 
