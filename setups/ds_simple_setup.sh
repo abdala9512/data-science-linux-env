@@ -86,7 +86,7 @@ if [ $DISTRIBUTION = "ubuntu" ]; then
     fi
     
     cd $CURRENT_PATH
-    echo "Ubuntu setup succesfully finished :)"
+    echo -e "\nSetup succesfully finished :)"
 
 elif [ $DISTRIBUTION = 'redhat' ]; then
    
@@ -111,15 +111,9 @@ elif [ $DISTRIBUTION = 'redhat' ]; then
     pip install apache-airflow
 
     cd $CURRENT_PATH
+    echo -e "\nSetup succesfully finished :)"
 else
     echo "Distribution not recognized"
     exit 0
 fi
 
-: '
-
-curl -O https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-255.0.0-linux-x86_64.tar.gz
-tar zxvf google-cloud-sdk-255.0.0-linux-x86_64.tar.gz
-./google-cloud-sdk/install.s
-
-'
