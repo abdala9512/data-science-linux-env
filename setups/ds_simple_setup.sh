@@ -6,18 +6,21 @@ SPARK_CONFIG=${2:-false}
 install_python_libraries(){
     echo "Installin python libraries"
 
+    # Download env_requirements
+    wget 
+
     # ML and data analysis libraries
-    pip install pandas --user
-    pip install sklearn -- user
-    pip install airflow --user
-    pip install matplotlib --user
-    pip install tensorflow --user
-    pip install jupyter --user
+    pip3 install pandas --user
+    pip3 install sklearn -- user
+    pip3 install airflow --user
+    pip3 install matplotlib --user
+    pip3 install tensorflow --user
+    pip3 install jupyter --user
 
     # GCP libraries
     
-    pip install --user pandas_gbq
-    pip install --user google-cloud-bigquery
+    pip3 install --user pandas_gbq
+    pip3 install --user google-cloud-bigquery
 
     # AWS
     pip install boto3
@@ -25,7 +28,7 @@ install_python_libraries(){
 }
 
 echo "Data Science setup. The following tools will be installed:"
-echo -e "\n1. Python V. 3.8.5 "
+echo -e "\n1. Python V. 3.8.6 "
 echo -e "\n2. Git Latest version"
 echo -e "\n3. Docker Latest version"
 
@@ -38,6 +41,15 @@ if [ $DISTRIBUTION = "ubuntu" ]; then
     # Docker installation
     sudo apt-get remove docker docker-engine docker.io containerd runc
     # Python setup
+
+    sudo add-apt-repository ppa:deadsnakes/ppa
+    sudo apt install python3.8
+    sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.8 10
+    
+    echo "alias python='python3'" >> ~/.bashrc
+    
+    sudo apt install python3-pip
+
     install_python_libraries
 
 
