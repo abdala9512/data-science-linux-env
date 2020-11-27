@@ -7,23 +7,15 @@ install_python_libraries(){
     echo "Installin python libraries"
 
     # Download env_requirements
-    wget 
+    wget https://raw.githubusercontent.com/abdala9512/data-science-linux-env/main/env_requirements.txt
 
-    # ML and data analysis libraries
-    pip3 install pandas --user
-    pip3 install sklearn -- user
-    pip3 install airflow --user
-    pip3 install matplotlib --user
-    pip3 install tensorflow --user
-    pip3 install jupyter --user
-
-    # GCP libraries
+    for lib in $(env_requirements.txt);
+    do
+        pip3 intall $lib --user
+    done
     
-    pip3 install --user pandas_gbq
-    pip3 install --user google-cloud-bigquery
+    rm env_requirements.txt
 
-    # AWS
-    pip install boto3
 
 }
 
