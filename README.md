@@ -27,3 +27,6 @@ Try to run the bash script in /home to avoid possible issues
 cd
 ./ds_simple_setup.sh
 ```
+
+# Contact
+You can contribute or send me an email to miguel.arquez12@gmail.com :)
