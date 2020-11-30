@@ -14,6 +14,7 @@ The setup includes:
 # download
 ```
 wget https://raw.githubusercontent.com/abdala9512/data-science-linux-env/main/<config>/<selected-setup>.sh
+```
 
 # Permissions
 ```
