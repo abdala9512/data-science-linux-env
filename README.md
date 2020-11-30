@@ -13,8 +13,7 @@ The setup includes:
 
 # download
 ```
-wget https://github.com/abdala9512/data-science-linux-env/blob/main/<selected-configuration>.sh
-```
+wget https://raw.githubusercontent.com/abdala9512/data-science-linux-env/main/<config>/<selected-setup>.sh
 
 # Permissions
 ```
