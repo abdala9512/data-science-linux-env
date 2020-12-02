@@ -11,7 +11,7 @@ The setup includes:
 - Visualization and webApp modules (Matplotlib, plotly, dash, streamlit, etc..)
 
 
-# download
+# Download
 ```
 wget https://raw.githubusercontent.com/abdala9512/data-science-linux-env/main/<config>/<selected-setup>.sh
 ```
